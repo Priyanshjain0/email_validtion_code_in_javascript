@@ -1,0 +1,42 @@
+IN beggner email validation in javascript 
+--------------------------------------------------------------
+codition are:-
+email length is more tham 11 charactor or equal to.
+after .only two or three digit is allowed like .com,.in
+after @ must be 3 charactor .
+_-----------------------------------------------------------------------
+const email=prompt("Enter email for checking valid or not.")
+const emaillen = email.length;
+const dot =email.lastIndexOf(".");
+const hostname =email.lastIndexOf("@");
+
+if(emaillen>=11)
+{
+   
+    if(emaillen-dot==4 || emaillen-dot==3 )
+    {
+        if(dot-hostname>=4 )
+        {
+            
+            console.log(dot-hostname);
+            alert("email id valid");
+
+        }
+        else
+        {
+            alert("hotname after @ is not valid")
+        }
+
+    }
+    else
+    {
+        alert("after . not allowed more than 3 charactor");
+    }
+
+}
+else
+{
+alert("email is not fullfill length 11");
+}
+
+  --------------------------------------------------------------------------------
