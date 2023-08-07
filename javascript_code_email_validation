@@ -9,6 +9,22 @@ const email=prompt("Enter email for checking valid or not.")
 const emaillen = email.length;
 const dot =email.lastIndexOf(".");
 const hostname =email.lastIndexOf("@");
+--------------------------------------------------------------------------
+Description
+_-----------------------------------------------------------------
+
+Sure! Here's a description of the code in bullet points for beginners:
+
+The code prompts the user to enter an email address for validation.
+It then stores the entered email in the variable email and calculates the length of the email using emaillen.
+The code finds the position of the last dot (.) in the email using dot and the position of the last "@" symbol using hostname.
+It checks if the length of the email is at least 11 characters long. If not, it displays an alert saying "email is not fulfilling length 11".
+If the length of the email is 11 or more characters, it proceeds to the next checks.
+It verifies if there are either 3 or 4 characters after the last dot (.) in the email. If not, it displays an alert saying "after . not allowed more than 3 characters".
+If there are 3 or 4 characters after the last dot, it then checks if there are at least 4 characters between the "@" symbol and the last dot. If not, it displays an alert saying "hostname after @ is not valid".
+If the email passes all the checks, it prints the number of characters between "@" and the last dot in the console and displays an alert saying "email id valid".
+Please note that while this code attempts to validate the email address, it is a basic validation and might not cover all possible valid email formats or prevent all invalid emails from passing through. It is essential to use more robust and well-tested email validation techniques for production applications.
+-----------------------------------------------------------------------------
 
 if(emaillen>=11)
 {
